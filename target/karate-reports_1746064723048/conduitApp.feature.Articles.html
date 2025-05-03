@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"60c1b4cd-7c70-469d-b7e3-1172fc473588",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>conduitApp.feature.Articles</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-04-30 08:58:41 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:20]"><span>[1:20]</span> <span>create new articulo</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">conduitApp/feature/Articles.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Articles</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:20]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:20]</span>
+                <span class="scenario-name">create new articulo</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:20]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3">20:58:41.679 &lt;&lt; lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+20:58:41.697 classpath:conduitApp/feature/Articles.feature:3
+Given url apiUrl
+&gt;&gt; classpath:conduitApp/feature/Articles.feature:20
+&gt;&gt; karate-config.js failed
+&gt;&gt; TypeError: undefined has no such function &quot;configure&quot;
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiUrl:&#39;https://conduit-api.bondaracademy.com/api/&#39;
+09:   }
+10:   if (env == &#39;dev&#39;) {
+11:    config.UserEmail = &#39;zony123rbd@gmail.com&#39;
+12:    config.UserPassword = &#39;123456789&#39;
+13:   } else if (env == &#39;qa&#39;) {
+14:     config.UserEmail = &#39;sandro.villegas@unas.edu.pe&#39;
+15:    config.UserPassword = &#39;123456789&#39;
+16:   }
+17:   const accessToken =  karate.callSingle(&#39;classpath:Helpers/CreateToken.feature&#39;, config).authToken
+18:   accessToken.configure(&#39;headers&#39;,&#39;Token&#39;+accessToken)
+19:   return config;
+20: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: undefined has no such function &quot;configure&quot;
+- &lt;js&gt;.fn(Unnamed:18)
+
+classpath:conduitApp/feature/Articles.feature:3
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.3.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">Helpers.CreateToken</div>
+      </div>
+      <div class="time-cell passed">1463</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.3.0.call">
+    <div class="step-container" id="0.3.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3.0.call.0.4">20:58:40.124 karate.env system property was: null 
+20:58:40.133 &gt;&gt; lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.3.0.call">
+    <div class="step-container" id="0.3.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.3.0.call">
+    <div class="step-container" id="0.3.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">63</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.3.0.call.0.7">{
+    &quot;user&quot;: {
+        &quot;email&quot;: &quot;#(UserEmail)&quot;,
+        &quot;password&quot;: &quot;#(UserPassword)&quot;
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.3.0.call">
+    <div class="step-container" id="0.3.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1394</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3.0.call.0.16">20:58:40.708 request:
+1 &gt; POST https://conduit-api.bondaracademy.com/api/users/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 64
+1 &gt; Host: conduit-api.bondaracademy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;zony123rbd@gmail.com&quot;,&quot;password&quot;:&quot;123456789&quot;}}
+
+20:58:41.670 response time in milliseconds: 958
+1 &lt; 200
+1 &lt; x-powered-by: Express
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; etag: W/&quot;140-pNDZMEFMi8DpI2u0fpjnQ7bQre0&quot;
+1 &lt; x-cloud-trace-context: 51298fbf3e538ff9e3c9c5c68879d06f;o=1
+1 &lt; date: Thu, 01 May 2025 01:58:41 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 320
+{&quot;user&quot;:{&quot;email&quot;:&quot;zony123rbd@gmail.com&quot;,&quot;username&quot;:&quot;sandrovillegas&quot;,&quot;bio&quot;:&quot;asd&quot;,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjA2NDcyMSwiZXhwIjoxNzUxMjQ4NzIxfQ.qBHi7Q8cVTC39oKyxP9hANgPqzNpDXb7p7inyNdIIh4&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.3.0.call">
+    <div class="step-container" id="0.3.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.3.0.call">
+    <div class="step-container" id="0.3.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token =  response.user.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Given header Authorization = &#39;Token&#39; + token</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref failed">22</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">20:58:41.698 classpath:conduitApp/feature/Articles.feature:22
+Given path &#39;articles&#39;
+&gt;&gt; classpath:conduitApp/feature/Articles.feature:20
+&gt;&gt; karate-config.js failed
+&gt;&gt; TypeError: undefined has no such function &quot;configure&quot;
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiUrl:&#39;https://conduit-api.bondaracademy.com/api/&#39;
+09:   }
+10:   if (env == &#39;dev&#39;) {
+11:    config.UserEmail = &#39;zony123rbd@gmail.com&#39;
+12:    config.UserPassword = &#39;123456789&#39;
+13:   } else if (env == &#39;qa&#39;) {
+14:     config.UserEmail = &#39;sandro.villegas@unas.edu.pe&#39;
+15:    config.UserPassword = &#39;123456789&#39;
+16:   }
+17:   const accessToken =  karate.callSingle(&#39;classpath:Helpers/CreateToken.feature&#39;, config).authToken
+18:   accessToken.configure(&#39;headers&#39;,&#39;Token&#39;+accessToken)
+19:   return config;
+20: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: undefined has no such function &quot;configure&quot;
+- &lt;js&gt;.fn(Unnamed:18)
+
+classpath:conduitApp/feature/Articles.feature:3
+classpath:conduitApp/feature/Articles.feature:22
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

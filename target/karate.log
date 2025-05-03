@@ -1,0 +1,3289 @@
+15:22:55.954 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:22:57.234 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+15:22:57.234 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+15:22:57.475 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:22:57.476 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+15:22:58.035 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 556
+1 < 200
+1 < Date: Tue, 29 Apr 2025 20:22:58 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Cf-Ray: 938183b5ba047466-MIA
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1744327151&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=cfa1jKptHLGa80YpriQsS3RoLHhkcP3SD2InvJFkfDc%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1744327151&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=cfa1jKptHLGa80YpriQsS3RoLHhkcP3SD2InvJFkfDc%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 997
+1 < X-Ratelimit-Reset: 1744327165
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Via: 1.1 vegur
+1 < Age: 7160
+1 < Cf-Cache-Status: HIT
+1 < alt-svc: h3=":443"; ma=86400
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=140113&min_rtt=139975&rtt_var=52768&sent=5&recv=7&lost=0&retrans=0&sent_bytes=3114&recv_bytes=790&delivery_rate=30874&cwnd=251&unsent_bytes=0&cid=317abbd8f1017efe&ts=193&x=0"
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+15:22:58.051 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+2 > Accept-Encoding: gzip,deflate
+
+
+15:22:58.107 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 630
+1 < 201
+1 < Date: Tue, 29 Apr 2025 20:22:58 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Cf-Ray: 938183b56d00e152-GIG
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1745958178&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=%2BKSes5g7ZFSU9vnVLZAxvnQqTpH91BC0GhYNH%2B1jnck%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1745958178&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=%2BKSes5g7ZFSU9vnVLZAxvnQqTpH91BC0GhYNH%2B1jnck%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1745958179
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/users/11
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Via: 1.1 vegur
+1 < Cf-Cache-Status: DYNAMIC
+1 < alt-svc: h3=":443"; ma=86400
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=101012&min_rtt=100987&rtt_var=37920&sent=7&recv=7&lost=0&retrans=0&sent_bytes=3112&recv_bytes=1019&delivery_rate=43048&cwnd=252&unsent_bytes=0&cid=4450170a77aca890&ts=312&x=0"
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+15:22:58.110 [pool-2-thread-2] INFO  com.intuit.karate - [print] created id is:  11 
+15:22:58.383 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 332
+2 < 200
+2 < Date: Tue, 29 Apr 2025 20:22:58 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Cf-Ray: 938183b7fd5ae29e-GIG
+2 < Server: cloudflare
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1745352626&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=mZDFqu15epkGuQ4RWFnnKY91YYu0ENKXkBHl4hXAA70%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1745352626&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=mZDFqu15epkGuQ4RWFnnKY91YYu0ENKXkBHl4hXAA70%3D
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 999
+2 < X-Ratelimit-Reset: 1745352673
+2 < Vary: Origin, Accept-Encoding
+2 < Access-Control-Allow-Credentials: true
+2 < Cache-Control: max-age=43200
+2 < Pragma: no-cache
+2 < Expires: -1
+2 < X-Content-Type-Options: nosniff
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Via: 1.1 vegur
+2 < Age: 5192
+2 < Cf-Cache-Status: HIT
+2 < alt-svc: h3=":443"; ma=86400
+2 < server-timing: cfL4;desc="?proto=TCP&rtt=102072&min_rtt=101970&rtt_var=38444&sent=3&recv=6&lost=0&retrans=0&sent_bytes=219&recv_bytes=1239&delivery_rate=14125&cwnd=250&unsent_bytes=0&cid=0c48082022651b9f&ts=123&x=0"
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+15:22:58.984 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/Users.feature
+15:49:09.703 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:49:09.711 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745959749707
+15:49:10.647 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+15:49:11.225 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+15:52:49.808 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:52:49.816 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745959969812
+15:52:51.175 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+15:52:51.485 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:52:52.152 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 661
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 56b31e3b072d7d9e328fb1504388a909;o=1
+1 < date: Tue, 29 Apr 2025 20:52:52 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+15:52:52.884 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+15:59:01.246 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:59:01.253 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745960341249
+15:59:02.546 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+15:59:02.578 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:3
+Given URL 'https://conduit-api.bondaracademy.com/api/'
+no step-definition method match found for: URL 'https://conduit-api.bondaracademy.com/api/'
+classpath:conduitApp/feature/HomePage.feature:3
+15:59:03.316 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+15:59:39.769 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:59:39.777 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745960379773
+15:59:41.022 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+15:59:41.302 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:59:41.926 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 622
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 613dfd7e50741ac30d977a629e1e5164;o=1
+1 < date: Tue, 29 Apr 2025 20:59:42 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+15:59:42.579 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:02:20.879 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:02:20.886 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745960540883
+16:02:21.850 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:02:22.079 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:02:22.694 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 611
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 80bc7f7e41a92708582e1be250825ee1;o=1
+1 < date: Tue, 29 Apr 2025 21:02:22 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:02:22.745 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:8
+And match response.tags contains ['cars' , 'baby']
+match failed: CONTAINS
+  $ | actual does not contain expected | actual array does not contain expected item - cars (LIST:LIST)
+  ["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]
+  ["cars","baby"]
+
+    $[9] | not equal (STRING:STRING)
+    'Live Sessions'
+    'cars'
+
+    $[8] | not equal (STRING:STRING)
+    'Zoom'
+    'cars'
+
+    $[7] | not equal (STRING:STRING)
+    'GitHub'
+    'cars'
+
+    $[6] | not equal (STRING:STRING)
+    'Git'
+    'cars'
+
+    $[5] | not equal (STRING:STRING)
+    'Value-Focused'
+    'cars'
+
+    $[4] | not equal (STRING:STRING)
+    'QA Skills'
+    'cars'
+
+    $[3] | not equal (STRING:STRING)
+    'qa career'
+    'cars'
+
+    $[2] | not equal (STRING:STRING)
+    'YouTube'
+    'cars'
+
+    $[1] | not equal (STRING:STRING)
+    'Bondar Academy'
+    'cars'
+
+    $[0] | not equal (STRING:STRING)
+    'Test'
+    'cars'
+
+classpath:conduitApp/feature/HomePage.feature:8
+16:02:23.327 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:04:49.128 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:04:49.136 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745960689132
+16:04:50.125 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:04:50.355 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:04:50.937 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 580
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: a1249d8f102b47d01cf0f61e8c5fa948;o=1
+1 < date: Tue, 29 Apr 2025 21:04:51 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:04:50.987 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:8
+And match response.tags contains ['cars' , 'baby']
+match failed: CONTAINS
+  $ | actual does not contain expected | actual array does not contain expected item - cars (LIST:LIST)
+  ["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]
+  ["cars","baby"]
+
+    $[9] | not equal (STRING:STRING)
+    'Live Sessions'
+    'cars'
+
+    $[8] | not equal (STRING:STRING)
+    'Zoom'
+    'cars'
+
+    $[7] | not equal (STRING:STRING)
+    'GitHub'
+    'cars'
+
+    $[6] | not equal (STRING:STRING)
+    'Git'
+    'cars'
+
+    $[5] | not equal (STRING:STRING)
+    'Value-Focused'
+    'cars'
+
+    $[4] | not equal (STRING:STRING)
+    'QA Skills'
+    'cars'
+
+    $[3] | not equal (STRING:STRING)
+    'qa career'
+    'cars'
+
+    $[2] | not equal (STRING:STRING)
+    'YouTube'
+    'cars'
+
+    $[1] | not equal (STRING:STRING)
+    'Bondar Academy'
+    'cars'
+
+    $[0] | not equal (STRING:STRING)
+    'Test'
+    'cars'
+
+classpath:conduitApp/feature/HomePage.feature:8
+16:04:51.489 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:07:23.869 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:07:23.877 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745960843873
+16:07:24.833 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:07:25.070 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:07:25.692 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 619
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 59e5ff95d0a719c2367c5b4442ca74f3;o=1
+1 < date: Tue, 29 Apr 2025 21:07:25 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:07:25.747 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:8
+And match response.tags contains 'cars'
+match failed: CONTAINS
+  $ | actual does not contain expected | actual array does not contain expected item - cars (LIST:STRING)
+  ["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]
+  'cars'
+
+    $[9] | not equal (STRING:STRING)
+    'Live Sessions'
+    'cars'
+
+    $[8] | not equal (STRING:STRING)
+    'Zoom'
+    'cars'
+
+    $[7] | not equal (STRING:STRING)
+    'GitHub'
+    'cars'
+
+    $[6] | not equal (STRING:STRING)
+    'Git'
+    'cars'
+
+    $[5] | not equal (STRING:STRING)
+    'Value-Focused'
+    'cars'
+
+    $[4] | not equal (STRING:STRING)
+    'QA Skills'
+    'cars'
+
+    $[3] | not equal (STRING:STRING)
+    'qa career'
+    'cars'
+
+    $[2] | not equal (STRING:STRING)
+    'YouTube'
+    'cars'
+
+    $[1] | not equal (STRING:STRING)
+    'Bondar Academy'
+    'cars'
+
+    $[0] | not equal (STRING:STRING)
+    'Test'
+    'cars'
+
+classpath:conduitApp/feature/HomePage.feature:8
+16:07:26.260 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:13:13.171 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:13:13.178 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745961193174
+16:13:14.163 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:13:14.406 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:13:15.041 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 632
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 6659e89359bef5532cf5c830f5c01b57;o=1
+1 < date: Tue, 29 Apr 2025 21:13:15 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:13:15.588 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:14:01.881 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:14:01.889 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745961241885
+16:14:03.051 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:14:03.268 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:14:03.855 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 584
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 271882babe91d05794f9c5afef0cf757;o=1
+1 < date: Tue, 29 Apr 2025 21:14:03 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:14:03.906 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:8
+And match response.tags contains ['Test' , 'Youtube']
+match failed: CONTAINS
+  $ | actual does not contain expected | actual array does not contain expected item - Youtube (LIST:LIST)
+  ["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]
+  ["Test","Youtube"]
+
+    $[9] | not equal (STRING:STRING)
+    'Live Sessions'
+    'Youtube'
+
+    $[8] | not equal (STRING:STRING)
+    'Zoom'
+    'Youtube'
+
+    $[7] | not equal (STRING:STRING)
+    'GitHub'
+    'Youtube'
+
+    $[6] | not equal (STRING:STRING)
+    'Git'
+    'Youtube'
+
+    $[5] | not equal (STRING:STRING)
+    'Value-Focused'
+    'Youtube'
+
+    $[4] | not equal (STRING:STRING)
+    'QA Skills'
+    'Youtube'
+
+    $[3] | not equal (STRING:STRING)
+    'qa career'
+    'Youtube'
+
+    $[2] | not equal (STRING:STRING)
+    'YouTube'
+    'Youtube'
+
+    $[1] | not equal (STRING:STRING)
+    'Bondar Academy'
+    'Youtube'
+
+    $[0] | not equal (STRING:STRING)
+    'Test'
+    'Youtube'
+
+classpath:conduitApp/feature/HomePage.feature:8
+16:14:04.611 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:14:22.188 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:14:22.195 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745961262191
+16:14:23.305 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:14:23.568 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:14:24.116 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 545
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 97ff79c63c4cb9695b7468fbb700f3fd;o=1
+1 < date: Tue, 29 Apr 2025 21:14:24 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:14:24.718 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:14:46.940 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:14:46.948 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745961286944
+16:14:47.884 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:14:48.115 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:14:48.711 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 592
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 04c2842262f203a148534783f4f238e3;o=1
+1 < date: Tue, 29 Apr 2025 21:14:48 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:14:49.262 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:15:13.791 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:15:13.798 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745961313795
+16:15:14.720 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:15:14.927 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:15:15.470 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 541
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: b582f0f245c8002ae6b31c6d4f59391c;o=1
+1 < date: Tue, 29 Apr 2025 21:15:15 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:15:15.984 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:16:09.417 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:16:09.423 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745961369420
+16:16:10.521 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:16:10.744 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:16:11.297 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 550
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: bf1b6150edfffce6e56d33fb2221ae4d;o=1
+1 < date: Tue, 29 Apr 2025 21:16:11 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:16:11.854 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:32:45.971 [main] ERROR c.intuit.karate.core.FeatureParser - not a valid feature file: conduitApp/feature/Articles.feature - mismatched input '"' expecting <EOF>
+16:33:11.201 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:33:11.209 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745962391205
+16:33:11.215 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:33:12.195 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:33:12.195 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:33:12.428 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:33:12.428 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karate@test.com","password":"karate123"}}
+
+16:33:13.036 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 606
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: f0ab5dce17d7f6dc2400c643d9fbc8f0;o=1
+1 < date: Tue, 29 Apr 2025 21:33:13 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:33:13.155 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 726
+1 < 403
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"2f-83PWxEwXkLR3WfVjo3wqB0FwKlU"
+1 < x-cloud-trace-context: 274a716ec07b14afe19f18986e5766eb
+1 < date: Tue, 29 Apr 2025 21:33:13 GMT
+1 < server: Google Frontend
+1 < Content-Length: 47
+{"errors":{"email or password":["is invalid"]}}
+
+16:33:13.158 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:8
+Then status200
+no step-definition method match found for: status200
+classpath:conduitApp/feature/Articles.feature:8
+16:33:13.683 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+16:33:13.752 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:35:23.009 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:35:23.015 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745962523012
+16:35:23.021 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:35:24.084 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:35:24.084 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:35:24.309 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:35:24.309 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd♠4gmail.com","password":"rbdpool1234567"}}
+
+16:35:24.950 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 638
+1 < 403
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"2f-83PWxEwXkLR3WfVjo3wqB0FwKlU"
+1 < x-cloud-trace-context: 27198e0fb0ee7d0e93b48f1ca9c63036;o=1
+1 < date: Tue, 29 Apr 2025 21:35:25 GMT
+1 < server: Google Frontend
+1 < Content-Length: 47
+{"errors":{"email or password":["is invalid"]}}
+
+16:35:24.953 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 643
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 7044eee9e94e3274ea0f16bea370bdf8
+1 < date: Tue, 29 Apr 2025 21:35:25 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:35:24.956 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:8
+Then status200
+no step-definition method match found for: status200
+classpath:conduitApp/feature/Articles.feature:8
+16:35:25.452 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+16:35:25.511 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:35:43.105 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:35:43.111 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745962543108
+16:35:43.117 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:35:44.083 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:35:44.083 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:35:44.307 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:35:44.308 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"rbdpool1234567"}}
+
+16:35:44.965 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 655
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 8369ecce573d5588bd79815c1b630680
+1 < date: Tue, 29 Apr 2025 21:35:45 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:35:44.965 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 656
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13f-5BR50ioqL1mmma6EmWE3UgZ+Bjw"
+1 < x-cloud-trace-context: c2cad82be81b1bfc2b2c94587348fe0f;o=1
+1 < date: Tue, 29 Apr 2025 21:35:45 GMT
+1 < server: Google Frontend
+1 < Content-Length: 319
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NTk2MjU0NSwiZXhwIjoxNzUxMTQ2NTQ1fQ.VjXnKoOmuAd4vlJNeWZvX_ANvZ-IxBngPrvyq6bg-m0"}}
+
+16:35:44.969 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:8
+Then status200
+no step-definition method match found for: status200
+classpath:conduitApp/feature/Articles.feature:8
+16:35:45.478 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+16:35:45.542 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:38:53.961 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:38:53.969 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745962733965
+16:38:53.974 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:38:55.005 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:38:55.005 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:38:55.320 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:38:55.321 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"rbdpool1234567"}}
+
+16:38:55.866 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 543
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: db90d3dfdba39138e526d586343d97c3;o=1
+1 < date: Tue, 29 Apr 2025 21:38:55 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:38:56.002 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 680
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13f-BZU/a0qjhpU0pQZ2t8zs4aoY3Lk"
+1 < x-cloud-trace-context: 9157a14abac32ec062506a1d17d4e794
+1 < date: Tue, 29 Apr 2025 21:38:56 GMT
+1 < server: Google Frontend
+1 < Content-Length: 319
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NTk2MjczNiwiZXhwIjoxNzUxMTQ2NzM2fQ.yABXwIISW8kRSU0VwNO6mp-jAl4MqQx3kg1tUmPliDA"}}
+
+16:38:56.004 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:8
+Then status200
+no step-definition method match found for: status200
+classpath:conduitApp/feature/Articles.feature:8
+16:38:56.586 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+16:38:56.674 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:42:39.932 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:42:39.941 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745962959937
+16:42:39.947 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:42:40.978 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:42:40.978 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:42:41.216 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:42:41.216 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"rbdpool1234567"}}
+
+16:42:41.942 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 724
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 628f20938fa4c708fe655ddcdd46031d
+1 < date: Tue, 29 Apr 2025 21:42:42 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:42:41.942 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 724
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13f-Hjz7bMm28i2B/VgHTdqvyBoFFUI"
+1 < x-cloud-trace-context: 74f6c7f7124106876a39526ab15862f9
+1 < date: Tue, 29 Apr 2025 21:42:42 GMT
+1 < server: Google Frontend
+1 < Content-Length: 319
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NTk2Mjk2MiwiZXhwIjoxNzUxMTQ2OTYyfQ.sHnTpHqutz716J90PsL8lIHFWQ2EPL3Nt7JrLUJAgwU"}}
+
+16:42:41.948 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:16
+Then status200
+no step-definition method match found for: status200
+classpath:conduitApp/feature/Articles.feature:16
+16:42:42.466 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+16:42:42.569 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:42:54.999 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:42:55.005 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745962975002
+16:42:55.012 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:42:55.998 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:42:55.998 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:42:56.224 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:42:56.225 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"rbdpool1234567"}}
+
+16:42:56.903 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 676
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: f2a6cae222b7cdf13c3e0b4248eafc8c;o=1
+1 < date: Tue, 29 Apr 2025 21:42:56 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:42:56.906 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 680
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13f-No05NhRoGni3TYdzZjIqto5Eu4U"
+1 < x-cloud-trace-context: 86d75eb8bc89e6920d4ea954898ceb83
+1 < date: Tue, 29 Apr 2025 21:42:57 GMT
+1 < server: Google Frontend
+1 < Content-Length: 319
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NTk2Mjk3NiwiZXhwIjoxNzUxMTQ2OTc2fQ.88uiXgLdPllwi5Wliocjp-uco7eXihAWZyFPhAcqEyk"}}
+
+16:42:56.910 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:16
+Then status200
+no step-definition method match found for: status200
+classpath:conduitApp/feature/Articles.feature:16
+16:42:57.451 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+16:42:57.532 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:48:58.936 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:48:58.947 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745963338943
+16:48:58.957 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:49:00.205 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:49:00.205 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:49:00.456 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:49:00.859 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+16:49:01.058 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 596
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: f4472bdc71ebbeb0ae60a0ec9c8405d5;o=1
+1 < date: Tue, 29 Apr 2025 21:49:01 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:49:01.187 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:49:22.979 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:49:22.991 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745963362986
+16:49:23.000 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:49:24.093 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:49:24.093 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:49:24.360 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:49:24.360 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"rbdpool1234567"}}
+
+16:49:25.039 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 677
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: b323d2e6bcfeea83ac68fd46f7ffc998;o=1
+1 < date: Tue, 29 Apr 2025 21:49:25 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:49:25.046 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 685
+1 < 403
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"2f-83PWxEwXkLR3WfVjo3wqB0FwKlU"
+1 < x-cloud-trace-context: b4266dabd8948edccde93b8124006b14
+1 < date: Tue, 29 Apr 2025 21:49:25 GMT
+1 < server: Google Frontend
+1 < Content-Length: 47
+{"errors":{"email or password":["is invalid"]}}
+
+16:49:25.564 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+16:49:25.633 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:49:44.953 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:49:44.959 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745963384956
+16:49:44.965 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:49:45.947 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:49:45.947 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:49:46.191 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:49:46.192 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"rbdpool1234567"}}
+
+16:49:46.941 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 746
+1 < 403
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"2f-83PWxEwXkLR3WfVjo3wqB0FwKlU"
+1 < x-cloud-trace-context: efb966e8f43103e060840e440c75d718
+1 < date: Tue, 29 Apr 2025 21:49:47 GMT
+1 < server: Google Frontend
+1 < Content-Length: 47
+{"errors":{"email or password":["is invalid"]}}
+
+16:49:46.941 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 746
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 7b3c38486787cb48374eaa0a70afda3c
+1 < date: Tue, 29 Apr 2025 21:49:47 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:49:46.950 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:16
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 746, url: https://conduit-api.bondaracademy.com/api/users/login, response: 
+{"errors":{"email or password":["is invalid"]}}
+classpath:conduitApp/feature/Articles.feature:16
+16:49:47.468 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+16:49:47.549 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:51:45.140 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:51:45.148 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745963505144
+16:51:45.154 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:51:46.196 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:51:46.197 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:51:46.446 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:51:46.447 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+16:51:47.129 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 679
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-vonr8zMAcpUU8bbDHHZx3aPBdfE"
+1 < x-cloud-trace-context: 61016c4e7330baff84ffcbbbdcd48d9e
+1 < date: Tue, 29 Apr 2025 21:51:47 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NTk2MzUwNywiZXhwIjoxNzUxMTQ3NTA3fQ.UYag-UQzvDMbLTY2R6EfbpUq_YCj3gc1G4fiRHa5OYw"}}
+
+16:51:47.129 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 679
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: ce53ee386f3fd1098103636a26aa0fd1;o=1
+1 < date: Tue, 29 Apr 2025 21:51:47 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+16:51:47.646 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+16:51:47.724 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+21:01:53.117 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:01:53.128 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745978513122
+21:01:53.136 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+21:01:54.456 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:01:54.456 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+21:01:54.738 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:01:54.738 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+21:01:55.880 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1138
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 29d89692a25ffe78ad7ac1da9eff0abf;o=1
+1 < date: Wed, 30 Apr 2025 02:01:56 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+21:01:55.880 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1138
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-4tZTP7fP81dt8d3n4cmXhoZcSXg"
+1 < x-cloud-trace-context: b8d32fa8099aa49dc73df4013a247ec7
+1 < date: Wed, 30 Apr 2025 02:01:56 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NTk3ODUxNiwiZXhwIjoxNzUxMTYyNTE2fQ.6EF9A7DgbTEsypOTLitX84h-cwJaW2rXfl0agty1u5Q"}}
+
+21:01:55.905 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:21
+And request {"articles":{"tagList":[]."title":"bla bla","description":"test test","body":"body"}}
+net.minidev.json.parser.ParseException: Unexpected token . at position 24.
+classpath:conduitApp/feature/Articles.feature:21
+21:01:56.550 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+21:01:56.639 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+21:02:17.580 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:02:17.587 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745978537584
+21:02:17.595 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+21:02:18.837 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:02:18.837 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+21:02:19.150 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:02:19.150 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+21:02:19.859 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 706
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 32591f5df419deb597c5fd0b7d67afbd
+1 < date: Wed, 30 Apr 2025 02:02:20 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+21:02:19.859 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 705
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-GDMawoNVJQGbO82mXwpx/UjkscA"
+1 < x-cloud-trace-context: 23f4497040eade7879add2d191abf5d8;o=1
+1 < date: Wed, 30 Apr 2025 02:02:20 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NTk3ODU0MCwiZXhwIjoxNzUxMTYyNTQwfQ.e3cf1qyx_4jWP4LfGRzAWbJE2ENafc1SdgAKpoYl1zo"}}
+
+21:02:19.875 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:21
+And request {"articles":{"tagList":[]."title":"bla bla","description":"test test","body":"body"}}
+net.minidev.json.parser.ParseException: Unexpected token . at position 24.
+classpath:conduitApp/feature/Articles.feature:21
+21:02:20.549 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+21:02:20.632 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+21:04:49.755 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:04:49.766 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745978689760
+21:04:49.774 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+21:04:51.001 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+21:04:51.001 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:04:51.319 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:04:51.319 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+21:04:51.910 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 589
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 2c8e98bd40a1b90476e1edc80f602bd6;o=1
+1 < date: Wed, 30 Apr 2025 02:04:52 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+21:04:52.010 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 689
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-EWJyMk16jXoMkTdV9TrQ/ak5rrI"
+1 < x-cloud-trace-context: ba941b62d110ab644a9fff4139847932
+1 < date: Wed, 30 Apr 2025 02:04:52 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NTk3ODY5MiwiZXhwIjoxNzUxMTYyNjkyfQ.AQlLiZls7akJ1cNonblBCNfc5vC86dRoqomEQysBDf4"}}
+
+21:04:52.625 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+21:04:52.770 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+21:05:22.362 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:05:22.370 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745978722366
+21:05:22.379 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+21:05:23.678 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+21:05:23.678 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:05:23.959 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:05:23.960 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+21:05:24.760 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 798
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-rZAQ7/akD/Vn0wKpwo+OvjIKjKY"
+1 < x-cloud-trace-context: 9f328412b0d58d24b9d2e247763730b2
+1 < date: Wed, 30 Apr 2025 02:05:25 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NTk3ODcyNSwiZXhwIjoxNzUxMTYyNzI1fQ.oSDqr9Odwp8lUpHiLhDa-MqdF0xZB93SbM-ZKyoIfzM"}}
+
+21:05:24.766 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 805
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 12958edf672181faa78be4e847c9ebfc
+1 < date: Wed, 30 Apr 2025 02:05:25 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+21:05:24.779 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:21
+And request {"article":{"tagList":[]."title":"bla bla","description":"test test","body":"body"}}
+net.minidev.json.parser.ParseException: Unexpected token . at position 23.
+classpath:conduitApp/feature/Articles.feature:21
+21:05:25.463 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+21:05:25.547 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+21:09:34.934 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:09:34.942 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745978974938
+21:09:34.950 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+21:09:36.214 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+21:09:36.214 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:09:36.520 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:09:36.520 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+21:09:37.317 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 794
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-up1rHHyndR1pHzrQeM3D9Qt7ouo"
+1 < x-cloud-trace-context: ab9cfed6c327787e49ebda3873610c2a
+1 < date: Wed, 30 Apr 2025 02:09:38 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NTk3ODk3OCwiZXhwIjoxNzUxMTYyOTc4fQ.gMLBiRwT70f9cdd5mPbpmE-p_3lf3L5V4QfFxaWgrhY"}}
+
+21:09:37.317 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 794
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 8fad15f46e5b06e1a8f475efc9d6eaef;o=1
+1 < date: Wed, 30 Apr 2025 02:09:38 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+21:09:37.334 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > POST https://conduit-api.bondaracademy.com/api/articles
+2 > Authorization: TokeneyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NTk3ODk3OCwiZXhwIjoxNzUxMTYyOTc4fQ.gMLBiRwT70f9cdd5mPbpmE-p_3lf3L5V4QfFxaWgrhY
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 84
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+2 > Accept-Encoding: gzip,deflate
+{"article":{"tagList":[],"title":"bla bla","description":"test test","body":"body"}}
+
+21:09:37.751 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 417
+2 < 401
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"40-MzpzbITdb69gTCj5BHAcyuxi2c0"
+2 < x-cloud-trace-context: 61985a0ee6f5eac49e750c69cf2941ee
+2 < date: Wed, 30 Apr 2025 02:09:38 GMT
+2 < server: Google Frontend
+2 < Content-Length: 64
+{"status":"error","message":"missing authorization credentials"}
+
+21:09:37.757 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:23
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 417, url: https://conduit-api.bondaracademy.com/api/articles, response: 
+{"status":"error","message":"missing authorization credentials"}
+classpath:conduitApp/feature/Articles.feature:23
+21:09:38.366 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+21:09:38.459 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+21:10:53.328 [main] ERROR c.intuit.karate.core.FeatureParser - not a valid feature file: conduitApp/feature/Articles.feature - mismatched input '"' expecting <EOF>
+21:23:59.926 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:23:59.935 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745979839930
+21:23:59.944 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+21:24:01.240 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+21:24:01.240 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:24:01.555 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:24:01.555 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+21:24:02.392 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 835
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 77766a109ecab5e1a18fc362a19d2fc3;o=1
+1 < date: Wed, 30 Apr 2025 02:24:03 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+21:24:02.392 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 835
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-RoNmRW+F3Tu2EVIc+1O5cvvJmGE"
+1 < x-cloud-trace-context: 4c46bc2affc85e13b28db554893f801a
+1 < date: Wed, 30 Apr 2025 02:24:03 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NTk3OTg0MywiZXhwIjoxNzUxMTYzODQzfQ.D_7-mT6YRd6g1i8rVRJXBy4_QQzLwqFBOI2e9_RCELw"}}
+
+21:24:03.002 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+21:24:03.095 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+21:24:32.734 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:24:32.743 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745979872738
+21:24:32.751 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+21:24:33.999 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:24:33.999 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+21:24:34.341 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:24:34.341 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+21:24:35.107 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 762
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-xZLCMsym+r2Nlswq2DSKTaROtrI"
+1 < x-cloud-trace-context: 863bdc8a96e2371ebddeea8859d761c1
+1 < date: Wed, 30 Apr 2025 02:24:35 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NTk3OTg3NSwiZXhwIjoxNzUxMTYzODc1fQ.AeilZpElth07gbOZzhHWWFomEJsqVNk_Up141vYUUNA"}}
+
+21:24:35.107 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 763
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 388afe36b3c5e908b09b886be1eed8f3;o=1
+1 < date: Wed, 30 Apr 2025 02:24:35 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+21:24:35.733 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+21:24:35.814 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+21:30:09.184 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:32:02.078 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:32:03.612 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:32:04.003 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+21:32:04.757 [main] DEBUG com.intuit.karate - response time in milliseconds: 751
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-EB6KrTqqBj43t2js8Mf5rsUc6DU"
+1 < x-cloud-trace-context: 07e8094ed19f797ebc3ae7a5b342e1f6;o=1
+1 < date: Wed, 30 Apr 2025 02:32:05 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NTk4MDMyNSwiZXhwIjoxNzUxMTY0MzI1fQ.X5Lbv6aYstqCDsSkEqHj1e0AI4fVy3PHnMaMtQCWmKc"}}
+
+21:38:03.922 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+21:38:04.398 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:38:05.578 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+21:38:05.795 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:38:05.800 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745980685796
+21:38:05.802 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:41:33.052 [main] ERROR c.intuit.karate.core.FeatureParser - not a valid feature file: conduitApp/feature/Articles.feature - no viable alternative at input '\r\n@debug\r\n        Given '
+16:45:06.685 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+16:45:07.181 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:45:08.301 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+16:45:08.517 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:45:08.523 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746049508519
+16:45:08.524 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:46:34.028 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+16:46:34.495 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:46:35.644 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+16:46:35.860 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:46:35.865 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746049595861
+16:46:35.868 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+17:06:29.000 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+17:06:29.539 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:06:30.782 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:06:30.833 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:3
+Given url 'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+js failed:
+>>>>
+01: 'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:45 Expected ; but found {
+'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+                                             ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2204)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2123)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:364)
+
+classpath:conduitApp/feature/Articles.feature:3
+17:06:31.470 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+17:06:31.724 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:06:31.729 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746050791725
+17:06:31.731 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+17:06:31.777 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:06:31.782 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:3
+Given url 'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+js failed:
+>>>>
+01: 'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:45 Expected ; but found {
+'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+                                             ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2204)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2123)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:364)
+
+classpath:conduitApp/feature/Articles.feature:3
+17:06:31.956 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+17:07:00.762 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+17:07:01.237 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:07:02.538 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:07:02.587 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:3
+Given url 'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+js failed:
+>>>>
+01: 'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:45 Expected ; but found {
+'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+                                             ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2204)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2123)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:364)
+
+classpath:conduitApp/feature/Articles.feature:3
+17:07:03.271 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+17:07:03.548 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:07:03.555 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746050823550
+17:07:03.558 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+17:07:03.602 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:07:03.606 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:3
+Given url 'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+js failed:
+>>>>
+01: 'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:45 Expected ; but found {
+'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+                                             ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2204)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2123)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:364)
+
+classpath:conduitApp/feature/Articles.feature:3
+17:07:03.810 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+17:10:01.565 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+17:10:02.087 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:10:03.321 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:10:03.367 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:3
+Given url 'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+js failed:
+>>>>
+01: 'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:45 Expected ; but found {
+'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+                                             ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2204)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2123)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:364)
+
+classpath:conduitApp/feature/Articles.feature:3
+17:10:04.077 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+17:10:04.321 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:10:04.326 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746051004322
+17:10:04.328 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+17:10:04.363 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:10:04.367 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:3
+Given url 'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+js failed:
+>>>>
+01: 'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:45 Expected ; but found {
+'https://conduit-api.bondaracademy.com/api/' {"email":"zony123rbd@gmail.com","password":" 123456789"}
+                                             ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2204)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2123)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:364)
+
+classpath:conduitApp/feature/Articles.feature:3
+17:10:04.540 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+17:10:32.735 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+17:10:33.244 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:10:34.683 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:10:34.770 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:Helpers/createToken.feature') {"email":"zony123rbd@gmail.com","password":" 123456789"}
+17:10:35.056 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":" 123456789"}}
+
+17:10:36.250 [main] DEBUG com.intuit.karate - response time in milliseconds: 1187
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-ROhpcLM7IQGKIdUYiGTnLw6M+3M"
+1 < x-cloud-trace-context: 23adcfd0b3ef43bb72d5ca561f7287cb;o=1
+1 < date: Wed, 30 Apr 2025 22:10:36 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjA1MTAzNiwiZXhwIjoxNzUxMjM1MDM2fQ.03lQRYmTDfOAwKQk_4xMjoqURBzqI5t-hY6nIhg4vUo"}}
+
+17:10:36.264 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:Helpers/createToken.feature') {"email":"zony123rbd@gmail.com","password":" 123456789"}
+17:10:37.685 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+17:10:38.144 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:10:38.151 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746051038145
+17:10:38.154 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+17:10:38.205 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:10:38.212 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:Helpers/createToken.feature') {"email":"zony123rbd@gmail.com","password":" 123456789"}
+17:10:38.220 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":" 123456789"}}
+
+17:10:38.870 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 648
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-F5J7fJN0P3+dcUyv2daMb41OdrU"
+1 < x-cloud-trace-context: d6cc3a6abef898d06e84752c63645586
+1 < date: Wed, 30 Apr 2025 22:10:38 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjA1MTAzOCwiZXhwIjoxNzUxMjM1MDM4fQ.-zuxYvexUd-NpZ6FvL5aJcLYJnFINrcAprxsPiigkls"}}
+
+17:10:38.873 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:Helpers/createToken.feature') {"email":"zony123rbd@gmail.com","password":" 123456789"}
+17:10:39.181 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+17:11:01.352 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+17:11:01.961 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:11:03.485 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:11:03.556 [main] ERROR c.intuit.karate.core.FeatureParser - not a valid feature file: Helpers/createToken.feature - mismatched input '{' expecting <EOF>
+17:11:03.572 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:18
+* def tokenResponse = callonce read('classpath:Helpers/createToken.feature') {"email":"zony123rbd@gmail.com","password":" 123456789"}
+js failed:
+>>>>
+01: read('classpath:Helpers/createToken.feature')
+<<<<
+org.graalvm.polyglot.PolyglotException: mismatched input '{' expecting <EOF>
+- com.intuit.karate.core.FeatureParser.parse(FeatureParser.java:74)
+- com.intuit.karate.core.Feature.read(Feature.java:63)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:65)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/Articles.feature:18
+17:11:04.603 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+17:11:04.915 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:11:04.920 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746051064916
+17:11:04.921 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+17:11:04.964 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:11:04.969 [pool-2-thread-1] ERROR c.intuit.karate.core.FeatureParser - not a valid feature file: Helpers/createToken.feature - mismatched input '{' expecting <EOF>
+17:11:04.971 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:18
+* def tokenResponse = callonce read('classpath:Helpers/createToken.feature') {"email":"zony123rbd@gmail.com","password":" 123456789"}
+js failed:
+>>>>
+01: read('classpath:Helpers/createToken.feature')
+<<<<
+org.graalvm.polyglot.PolyglotException: mismatched input '{' expecting <EOF>
+- com.intuit.karate.core.FeatureParser.parse(FeatureParser.java:74)
+- com.intuit.karate.core.Feature.read(Feature.java:63)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:65)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/Articles.feature:18
+17:11:05.242 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+17:33:19.991 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+17:33:20.423 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:33:21.686 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:33:21.768 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:Helpers/createToken.feature') {"email":"zony123rbd@gmail.com","password":" 123456789"}
+17:33:22.053 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":" 123456789"}}
+
+17:33:23.113 [main] DEBUG com.intuit.karate - response time in milliseconds: 1057
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-3m8dZxZfRuEbL80rP5L+naMukHY"
+1 < x-cloud-trace-context: 0d14030b7c4d2e2c128be34c794cba43;o=1
+1 < date: Wed, 30 Apr 2025 22:33:22 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjA1MjQwMiwiZXhwIjoxNzUxMjM2NDAyfQ.1eE-4_N29WF7pVndfg1s3x56Qz34CaTSVSvK2G8OP_g"}}
+
+17:33:23.120 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:Helpers/createToken.feature') {"email":"zony123rbd@gmail.com","password":" 123456789"}
+17:33:23.742 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+17:33:23.980 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:33:23.984 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746052403981
+17:33:23.986 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+17:33:24.020 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:33:24.025 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:Helpers/createToken.feature') {"email":"zony123rbd@gmail.com","password":" 123456789"}
+17:33:24.033 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":" 123456789"}}
+
+17:33:24.662 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 628
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-ZoRKf4MLvkDRIx0WIN77lrS1LlU"
+1 < x-cloud-trace-context: 9db3e6cb1f2ba01690f580e60ed8cd71
+1 < date: Wed, 30 Apr 2025 22:33:24 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjA1MjQwNCwiZXhwIjoxNzUxMjM2NDA0fQ.yuMd5qSzke4YlRyCfPlwD8YYIFV9uULmii0NxbQ2xZg"}}
+
+17:33:24.664 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:Helpers/createToken.feature') {"email":"zony123rbd@gmail.com","password":" 123456789"}
+17:33:24.856 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+17:33:35.071 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:33:36.516 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:33:36.810 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:33:37.451 [main] DEBUG com.intuit.karate - response time in milliseconds: 639
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 149852dba2565fb5451256b42960cec8;o=1
+1 < date: Wed, 30 Apr 2025 22:33:37 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+20:15:50.893 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+20:15:51.474 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:15:52.922 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:15:52.981 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:Helpers/createToken.feature')
+20:15:53.439 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 54
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"#(email)","password":"#(password)"}}
+
+20:15:56.239 [main] DEBUG com.intuit.karate - response time in milliseconds: 2796
+1 < 403
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"2f-83PWxEwXkLR3WfVjo3wqB0FwKlU"
+1 < x-cloud-trace-context: 14fb90b10616a94271fe2e9fa71b1663;o=1
+1 < date: Thu, 01 May 2025 01:15:56 GMT
+1 < server: Google Frontend
+1 < Content-Length: 47
+{"errors":{"email or password":["is invalid"]}}
+
+20:15:56.246 [main] ERROR com.intuit.karate - classpath:Helpers/createToken.feature:17
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 2796, url: https://conduit-api.bondaracademy.com/api/users/login, response: 
+{"errors":{"email or password":["is invalid"]}}
+classpath:Helpers/createToken.feature:17
+20:15:56.249 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:18
+* def tokenResponse = callonce read('classpath:Helpers/createToken.feature')
+status code was: 403, expected: 200, response time in milliseconds: 2796, url: https://conduit-api.bondaracademy.com/api/users/login, response: 
+{"errors":{"email or password":["is invalid"]}}
+classpath:Helpers/createToken.feature:17
+classpath:conduitApp/feature/Articles.feature:18
+20:15:56.877 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+20:15:57.095 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:15:57.099 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746062157096
+20:15:57.101 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+20:15:57.129 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:15:57.135 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:Helpers/createToken.feature')
+20:15:57.146 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 54
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"#(email)","password":"#(password)"}}
+
+20:15:57.762 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 615
+1 < 403
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"2f-83PWxEwXkLR3WfVjo3wqB0FwKlU"
+1 < x-cloud-trace-context: adfe8eca1691e8344b20be3bf9221f7c
+1 < date: Thu, 01 May 2025 01:15:58 GMT
+1 < server: Google Frontend
+1 < Content-Length: 47
+{"errors":{"email or password":["is invalid"]}}
+
+20:15:57.763 [pool-2-thread-1] ERROR com.intuit.karate - classpath:Helpers/createToken.feature:17
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 615, url: https://conduit-api.bondaracademy.com/api/users/login, response: 
+{"errors":{"email or password":["is invalid"]}}
+classpath:Helpers/createToken.feature:17
+20:15:57.763 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:18
+* def tokenResponse = callonce read('classpath:Helpers/createToken.feature')
+status code was: 403, expected: 200, response time in milliseconds: 615, url: https://conduit-api.bondaracademy.com/api/users/login, response: 
+{"errors":{"email or password":["is invalid"]}}
+classpath:Helpers/createToken.feature:17
+classpath:conduitApp/feature/Articles.feature:18
+20:15:58.011 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+20:17:01.323 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+20:17:01.786 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:17:03.057 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:17:03.107 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:Helpers/createToken.feature')
+20:17:03.602 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 54
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"#(email)","password":"#(password)"}}
+
+20:17:04.430 [main] DEBUG com.intuit.karate - response time in milliseconds: 822
+1 < 403
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"2f-83PWxEwXkLR3WfVjo3wqB0FwKlU"
+1 < x-cloud-trace-context: 9284d9d444f0cb65790983c578422ffb;o=1
+1 < date: Thu, 01 May 2025 01:17:04 GMT
+1 < server: Google Frontend
+1 < Content-Length: 47
+{"errors":{"email or password":["is invalid"]}}
+
+20:17:04.439 [main] ERROR com.intuit.karate - classpath:Helpers/createToken.feature:17
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 822, url: https://conduit-api.bondaracademy.com/api/users/login, response: 
+{"errors":{"email or password":["is invalid"]}}
+classpath:Helpers/createToken.feature:17
+20:17:04.442 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:18
+* def tokenResponse = callonce read('classpath:Helpers/createToken.feature')
+status code was: 403, expected: 200, response time in milliseconds: 822, url: https://conduit-api.bondaracademy.com/api/users/login, response: 
+{"errors":{"email or password":["is invalid"]}}
+classpath:Helpers/createToken.feature:17
+classpath:conduitApp/feature/Articles.feature:18
+20:17:05.311 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+20:17:05.587 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:17:05.591 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746062225588
+20:17:05.593 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+20:17:05.641 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:17:05.649 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:Helpers/createToken.feature')
+20:17:05.664 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 54
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"#(email)","password":"#(password)"}}
+
+20:17:06.289 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 623
+1 < 403
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"2f-83PWxEwXkLR3WfVjo3wqB0FwKlU"
+1 < x-cloud-trace-context: 247264b5cb569693c9e0fc165317f63b
+1 < date: Thu, 01 May 2025 01:17:06 GMT
+1 < server: Google Frontend
+1 < Content-Length: 47
+{"errors":{"email or password":["is invalid"]}}
+
+20:17:06.291 [pool-2-thread-1] ERROR com.intuit.karate - classpath:Helpers/createToken.feature:17
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 623, url: https://conduit-api.bondaracademy.com/api/users/login, response: 
+{"errors":{"email or password":["is invalid"]}}
+classpath:Helpers/createToken.feature:17
+20:17:06.291 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:18
+* def tokenResponse = callonce read('classpath:Helpers/createToken.feature')
+status code was: 403, expected: 200, response time in milliseconds: 623, url: https://conduit-api.bondaracademy.com/api/users/login, response: 
+{"errors":{"email or password":["is invalid"]}}
+classpath:Helpers/createToken.feature:17
+classpath:conduitApp/feature/Articles.feature:18
+20:17:06.533 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+20:17:45.431 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+20:17:45.887 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:17:47.194 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:17:47.236 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:Helpers/createToken.feature')
+20:17:47.543 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+20:17:48.403 [main] DEBUG com.intuit.karate - response time in milliseconds: 856
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-8yPoc44AXdBsp2JKuawwTo47Fl0"
+1 < x-cloud-trace-context: 3a82db3c4df35ac9b072ef7978e0ff0a;o=1
+1 < date: Thu, 01 May 2025 01:17:48 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjA2MjI2OCwiZXhwIjoxNzUxMjQ2MjY4fQ.R6MnDnTID-tyrGUIohdLFdskF68IHR-zQ_1PMEyHt5Y"}}
+
+20:17:48.411 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:Helpers/createToken.feature')
+20:17:49.087 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+20:17:49.429 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:17:49.434 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746062269430
+20:17:49.436 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+20:17:49.478 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:17:49.484 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:Helpers/createToken.feature')
+20:17:49.496 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+20:17:50.140 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 644
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-1JmmlGy3s/cB9kQsm76NXbjM2ko"
+1 < x-cloud-trace-context: 3c47cd673c3b504d9083c4badfacc580
+1 < date: Thu, 01 May 2025 01:17:50 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjA2MjI3MCwiZXhwIjoxNzUxMjQ2MjcwfQ.IdeUEfsLEej-tf6qp9hAy7dpt1PIAmtnvMV6FOsPyWY"}}
+
+20:17:50.142 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:Helpers/createToken.feature')
+20:17:50.356 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+20:40:54.241 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+20:40:54.735 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:40:55.960 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:40:56.003 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:Helpers/createToken.feature')
+20:40:56.355 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+20:40:57.304 [main] DEBUG com.intuit.karate - response time in milliseconds: 947
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-OO6m2W9QP383pQ7XQzXfxLGRzJ4"
+1 < x-cloud-trace-context: a8042b09cb7be47dd2753860435bbfe5;o=1
+1 < date: Thu, 01 May 2025 01:40:57 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjA2MzY1NywiZXhwIjoxNzUxMjQ3NjU3fQ.qyMtfuKiI09sxB7i8ZZGA-20R-KLBx9LnwmRYQG7LeE"}}
+
+20:40:57.312 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:Helpers/createToken.feature')
+20:40:57.967 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+20:40:58.229 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:40:58.233 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746063658229
+20:40:58.234 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+20:40:58.265 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:40:58.270 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:Helpers/createToken.feature')
+20:40:58.278 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+20:40:58.895 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 617
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-rzGaks5oiNBsA9jwDWIp9mCt1Z8"
+1 < x-cloud-trace-context: fbaf045f84f67e01d72b070cfe80c24a
+1 < date: Thu, 01 May 2025 01:40:59 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjA2MzY1OSwiZXhwIjoxNzUxMjQ3NjU5fQ.HSqEM8YFdoM18EBO_AiMqU1fkzedWMAu6JKQw1yusXg"}}
+
+20:40:58.897 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:Helpers/createToken.feature')
+20:40:59.076 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+20:54:28.357 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+20:54:28.842 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:54:30.025 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:54:30.044 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:3
+Given url apiUrl
+>> classpath:conduitApp/feature/Articles.feature:20
+>> karate-config.js failed
+>> TypeError: invokeMember (callSlingle) on com.intuit.karate.core.ScenarioBridge failed due to: Unknown identifier: callSlingle
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiUrl:'https://conduit-api.bondaracademy.com/api/'
+09:   }
+10:   if (env == 'dev') {
+11:    config.UserEmail = 'zony123rbd@gmail.com'
+12:    config.UserPassword = '123456789'
+13:   } else if (env == 'qa') {
+14:     config.UserEmail = 'sandro.villegas@unas.edu.pe'
+15:    config.UserPassword = '123456789'
+16:   }
+17:   const accessToken =  karate.callSlingle('classpath:Helpers/CreateToken.feature', config).authToken
+18:   accessToken.configure('headers','Token'+accessToken)
+19:   return config;
+20: }
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (callSlingle) on com.intuit.karate.core.ScenarioBridge failed due to: Unknown identifier: callSlingle
+- <js>.fn(Unnamed:17)
+
+classpath:conduitApp/feature/Articles.feature:3
+20:54:30.045 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:22
+Given path 'articles'
+>> classpath:conduitApp/feature/Articles.feature:20
+>> karate-config.js failed
+>> TypeError: invokeMember (callSlingle) on com.intuit.karate.core.ScenarioBridge failed due to: Unknown identifier: callSlingle
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiUrl:'https://conduit-api.bondaracademy.com/api/'
+09:   }
+10:   if (env == 'dev') {
+11:    config.UserEmail = 'zony123rbd@gmail.com'
+12:    config.UserPassword = '123456789'
+13:   } else if (env == 'qa') {
+14:     config.UserEmail = 'sandro.villegas@unas.edu.pe'
+15:    config.UserPassword = '123456789'
+16:   }
+17:   const accessToken =  karate.callSlingle('classpath:Helpers/CreateToken.feature', config).authToken
+18:   accessToken.configure('headers','Token'+accessToken)
+19:   return config;
+20: }
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (callSlingle) on com.intuit.karate.core.ScenarioBridge failed due to: Unknown identifier: callSlingle
+- <js>.fn(Unnamed:17)
+
+classpath:conduitApp/feature/Articles.feature:3
+classpath:conduitApp/feature/Articles.feature:22
+20:54:30.673 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+20:54:30.914 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:54:30.918 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746064470915
+20:54:30.920 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+20:54:30.963 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:54:30.966 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:3
+Given url apiUrl
+>> classpath:conduitApp/feature/Articles.feature:20
+>> karate-config.js failed
+>> TypeError: invokeMember (callSlingle) on com.intuit.karate.core.ScenarioBridge failed due to: Unknown identifier: callSlingle
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiUrl:'https://conduit-api.bondaracademy.com/api/'
+09:   }
+10:   if (env == 'dev') {
+11:    config.UserEmail = 'zony123rbd@gmail.com'
+12:    config.UserPassword = '123456789'
+13:   } else if (env == 'qa') {
+14:     config.UserEmail = 'sandro.villegas@unas.edu.pe'
+15:    config.UserPassword = '123456789'
+16:   }
+17:   const accessToken =  karate.callSlingle('classpath:Helpers/CreateToken.feature', config).authToken
+18:   accessToken.configure('headers','Token'+accessToken)
+19:   return config;
+20: }
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (callSlingle) on com.intuit.karate.core.ScenarioBridge failed due to: Unknown identifier: callSlingle
+- <js>.fn(Unnamed:17)
+
+classpath:conduitApp/feature/Articles.feature:3
+20:54:30.967 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:22
+Given path 'articles'
+>> classpath:conduitApp/feature/Articles.feature:20
+>> karate-config.js failed
+>> TypeError: invokeMember (callSlingle) on com.intuit.karate.core.ScenarioBridge failed due to: Unknown identifier: callSlingle
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiUrl:'https://conduit-api.bondaracademy.com/api/'
+09:   }
+10:   if (env == 'dev') {
+11:    config.UserEmail = 'zony123rbd@gmail.com'
+12:    config.UserPassword = '123456789'
+13:   } else if (env == 'qa') {
+14:     config.UserEmail = 'sandro.villegas@unas.edu.pe'
+15:    config.UserPassword = '123456789'
+16:   }
+17:   const accessToken =  karate.callSlingle('classpath:Helpers/CreateToken.feature', config).authToken
+18:   accessToken.configure('headers','Token'+accessToken)
+19:   return config;
+20: }
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (callSlingle) on com.intuit.karate.core.ScenarioBridge failed due to: Unknown identifier: callSlingle
+- <js>.fn(Unnamed:17)
+
+classpath:conduitApp/feature/Articles.feature:3
+classpath:conduitApp/feature/Articles.feature:22
+20:54:31.114 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+20:58:37.427 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+20:58:38.161 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:58:40.121 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:58:40.133 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+20:58:40.708 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+20:58:41.669 [main] DEBUG com.intuit.karate - response time in milliseconds: 958
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-pNDZMEFMi8DpI2u0fpjnQ7bQre0"
+1 < x-cloud-trace-context: 51298fbf3e538ff9e3c9c5c68879d06f;o=1
+1 < date: Thu, 01 May 2025 01:58:41 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjA2NDcyMSwiZXhwIjoxNzUxMjQ4NzIxfQ.qBHi7Q8cVTC39oKyxP9hANgPqzNpDXb7p7inyNdIIh4"}}
+
+20:58:41.679 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+20:58:41.697 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:3
+Given url apiUrl
+>> classpath:conduitApp/feature/Articles.feature:20
+>> karate-config.js failed
+>> TypeError: undefined has no such function "configure"
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiUrl:'https://conduit-api.bondaracademy.com/api/'
+09:   }
+10:   if (env == 'dev') {
+11:    config.UserEmail = 'zony123rbd@gmail.com'
+12:    config.UserPassword = '123456789'
+13:   } else if (env == 'qa') {
+14:     config.UserEmail = 'sandro.villegas@unas.edu.pe'
+15:    config.UserPassword = '123456789'
+16:   }
+17:   const accessToken =  karate.callSingle('classpath:Helpers/CreateToken.feature', config).authToken
+18:   accessToken.configure('headers','Token'+accessToken)
+19:   return config;
+20: }
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: undefined has no such function "configure"
+- <js>.fn(Unnamed:18)
+
+classpath:conduitApp/feature/Articles.feature:3
+20:58:41.697 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:22
+Given path 'articles'
+>> classpath:conduitApp/feature/Articles.feature:20
+>> karate-config.js failed
+>> TypeError: undefined has no such function "configure"
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiUrl:'https://conduit-api.bondaracademy.com/api/'
+09:   }
+10:   if (env == 'dev') {
+11:    config.UserEmail = 'zony123rbd@gmail.com'
+12:    config.UserPassword = '123456789'
+13:   } else if (env == 'qa') {
+14:     config.UserEmail = 'sandro.villegas@unas.edu.pe'
+15:    config.UserPassword = '123456789'
+16:   }
+17:   const accessToken =  karate.callSingle('classpath:Helpers/CreateToken.feature', config).authToken
+18:   accessToken.configure('headers','Token'+accessToken)
+19:   return config;
+20: }
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: undefined has no such function "configure"
+- <js>.fn(Unnamed:18)
+
+classpath:conduitApp/feature/Articles.feature:3
+classpath:conduitApp/feature/Articles.feature:22
+20:58:42.758 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+20:58:43.047 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:58:43.052 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746064723048
+20:58:43.054 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+20:58:43.091 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:58:43.092 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+20:58:43.106 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+20:58:43.722 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 614
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-C4c3hLw2gqzO+CJBr+52anEax/A"
+1 < x-cloud-trace-context: 49ee51a87734ffd46226e00621b6844b
+1 < date: Thu, 01 May 2025 01:58:44 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjA2NDcyNCwiZXhwIjoxNzUxMjQ4NzI0fQ.Qo8kwVmmAhpd8fy6_Nu2GLGn2Iv6lPec-59VtcrF1xQ"}}
+
+20:58:43.725 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+20:58:43.730 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:3
+Given url apiUrl
+>> classpath:conduitApp/feature/Articles.feature:20
+>> karate-config.js failed
+>> TypeError: undefined has no such function "configure"
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiUrl:'https://conduit-api.bondaracademy.com/api/'
+09:   }
+10:   if (env == 'dev') {
+11:    config.UserEmail = 'zony123rbd@gmail.com'
+12:    config.UserPassword = '123456789'
+13:   } else if (env == 'qa') {
+14:     config.UserEmail = 'sandro.villegas@unas.edu.pe'
+15:    config.UserPassword = '123456789'
+16:   }
+17:   const accessToken =  karate.callSingle('classpath:Helpers/CreateToken.feature', config).authToken
+18:   accessToken.configure('headers','Token'+accessToken)
+19:   return config;
+20: }
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: undefined has no such function "configure"
+- <js>.fn(Unnamed:18)
+
+classpath:conduitApp/feature/Articles.feature:3
+20:58:43.730 [pool-2-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:22
+Given path 'articles'
+>> classpath:conduitApp/feature/Articles.feature:20
+>> karate-config.js failed
+>> TypeError: undefined has no such function "configure"
+js failed:
+>>>>
+01: function fn() {
+02:   var env = karate.env; // get system property 'karate.env'
+03:   karate.log('karate.env system property was:', env);
+04:   if (!env) {
+05:     env = 'dev';
+06:   }
+07:   var config = {
+08:     apiUrl:'https://conduit-api.bondaracademy.com/api/'
+09:   }
+10:   if (env == 'dev') {
+11:    config.UserEmail = 'zony123rbd@gmail.com'
+12:    config.UserPassword = '123456789'
+13:   } else if (env == 'qa') {
+14:     config.UserEmail = 'sandro.villegas@unas.edu.pe'
+15:    config.UserPassword = '123456789'
+16:   }
+17:   const accessToken =  karate.callSingle('classpath:Helpers/CreateToken.feature', config).authToken
+18:   accessToken.configure('headers','Token'+accessToken)
+19:   return config;
+20: }
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: undefined has no such function "configure"
+- <js>.fn(Unnamed:18)
+
+classpath:conduitApp/feature/Articles.feature:3
+classpath:conduitApp/feature/Articles.feature:22
+20:58:44.009 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+21:00:30.957 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+21:00:31.524 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:00:32.862 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:00:32.868 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+21:00:33.234 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+21:00:34.095 [main] DEBUG com.intuit.karate - response time in milliseconds: 858
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-3XAcJRb0dvH7sjTwpbfTzjiViiE"
+1 < x-cloud-trace-context: 82b8c0272826d8e9f4f9f5dc72f71ca5;o=1
+1 < date: Thu, 01 May 2025 02:00:34 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjA2NDgzNCwiZXhwIjoxNzUxMjQ4ODM0fQ.2gvWE0Xe14M7abouhZuvwCuMX3UzMT0zv7zbJH36-qg"}}
+
+21:00:34.101 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+21:00:34.790 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@debug
+21:00:35.083 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:00:35.087 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746064835084
+21:00:35.089 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+21:00:35.127 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:00:35.129 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+21:00:35.142 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+21:00:35.746 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 603
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-tpN6aiUSzkvybfYOVabpIbBrv9I"
+1 < x-cloud-trace-context: 7a5f2bb1faa8eb56f022f00c7daedb95
+1 < date: Thu, 01 May 2025 02:00:36 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjA2NDgzNiwiZXhwIjoxNzUxMjQ4ODM2fQ.FOkpdTqfZ2sXxucyUHElQ2snQOt7cCh14N61AkpVn-o"}}
+
+21:00:35.749 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+21:00:35.931 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+17:59:32.975 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:59:32.990 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746226772983
+17:59:33.004 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+17:59:34.760 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+17:59:34.760 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:59:34.774 [pool-1-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+17:59:35.212 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+17:59:36.198 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 980
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-Di2n6HNQ8t5j6aED3wLwYw0fTHY"
+1 < x-cloud-trace-context: 7603509ce4139c595a921b27af7c68f5;o=1
+1 < date: Fri, 02 May 2025 22:59:36 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjIyNjc3NiwiZXhwIjoxNzUxNDEwNzc2fQ.Q-WxV_LVXZtx0d7lOI0tAUv2y47OmETk0ab_hufweZs"}}
+
+17:59:36.207 [pool-1-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+17:59:36.208 [pool-1-thread-2] WARN  com.intuit.karate - this thread waited 1434 milliseconds for callSingle lock: classpath:Helpers/CreateToken.feature
+17:59:36.240 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:3
+Given url  apiurl
+js failed:
+>>>>
+01: apiurl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "apiurl" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/HomePage.feature:3
+17:59:37.208 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+17:59:37.326 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+17:59:48.570 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:59:50.103 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:59:50.110 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+17:59:50.584 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+17:59:51.348 [main] DEBUG com.intuit.karate - response time in milliseconds: 760
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-Q9x8z8DYa4cQOsKoeddBE5LmBoQ"
+1 < x-cloud-trace-context: 453972c00c64198063eb399699f8db83;o=1
+1 < date: Fri, 02 May 2025 22:59:51 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjIyNjc5MSwiZXhwIjoxNzUxNDEwNzkxfQ.UcrXsDAZWrDmJhk3fGOPnHe0W_h_IDyrLmqDJiWIW4c"}}
+
+17:59:51.357 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+17:59:51.391 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:3
+Given url  apiurl
+js failed:
+>>>>
+01: apiurl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "apiurl" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/HomePage.feature:3
+18:50:32.342 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:50:33.534 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:50:33.539 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+18:50:33.930 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+18:50:34.891 [main] DEBUG com.intuit.karate - response time in milliseconds: 959
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-+ttI1EftiIJ/shA/HpGPCixYx9Y"
+1 < x-cloud-trace-context: 6c7653b90ef87bda02cd36c1565646e5;o=1
+1 < date: Fri, 02 May 2025 23:50:34 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjIyOTgzNCwiZXhwIjoxNzUxNDEzODM0fQ.2mfvwgAUaL_IFHj1ldsBhN4q_Y-yc7W5P16qO-7jYBs"}}
+
+18:50:34.897 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+18:50:35.730 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:50:35.746 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:3
+Given url  apiurl
+js failed:
+>>>>
+01: apiurl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "apiurl" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/HomePage.feature:3
+18:50:36.270 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:50:36.274 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746229836271
+18:50:36.276 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+18:50:36.297 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:50:36.297 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+18:50:36.298 [pool-2-thread-2] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+18:50:36.308 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+18:50:36.888 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 579
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-HwcoWVLg0bJw+X25RT+EEnwBbGM"
+1 < x-cloud-trace-context: 9272f0bc2585eeb53456d9efea84fc1e
+1 < date: Fri, 02 May 2025 23:50:36 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjIyOTgzNiwiZXhwIjoxNzUxNDEzODM2fQ.V_uKMp2Ugth-FSYMdKJxnBafcbbSfC5bjWUTV6AkJgc"}}
+
+18:50:36.890 [pool-2-thread-2] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+18:50:36.890 [pool-2-thread-1] WARN  com.intuit.karate - this thread waited 592 milliseconds for callSingle lock: classpath:Helpers/CreateToken.feature
+18:50:36.893 [pool-2-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:3
+Given url  apiurl
+js failed:
+>>>>
+01: apiurl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "apiurl" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/HomePage.feature:3
+18:50:36.978 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+18:50:37.081 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+18:52:02.260 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:52:03.636 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:52:03.643 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+18:52:04.069 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+18:52:04.782 [main] DEBUG com.intuit.karate - response time in milliseconds: 710
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-e2p2J5ejMVm2zbP0c7Pu9vwA0M4"
+1 < x-cloud-trace-context: a4d6a3bf20e8944dddd3b06851f3b003;o=1
+1 < date: Fri, 02 May 2025 23:52:04 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjIyOTkyNCwiZXhwIjoxNzUxNDEzOTI0fQ.T3dzlL2u6AAeNnQNK3d_DbJ8LRwrO_ifuoSZVo3PFz4"}}
+
+18:52:04.791 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+18:52:05.793 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:52:05.823 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:3
+Given url  apiurl
+js failed:
+>>>>
+01: apiurl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "apiurl" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/HomePage.feature:3
+18:53:03.716 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:53:05.205 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:53:05.211 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+18:53:05.660 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+18:53:06.444 [main] DEBUG com.intuit.karate - response time in milliseconds: 780
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-zCtzZUYtWhYH5OrslhCebBUsrbU"
+1 < x-cloud-trace-context: a919c9b5f85931a0253b422db041c5da;o=1
+1 < date: Fri, 02 May 2025 23:53:06 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjIyOTk4NiwiZXhwIjoxNzUxNDEzOTg2fQ.ZgBLlGdtPCUMksmWXuhgpGk-xz0H8kaoh1daJb-B6Oc"}}
+
+18:53:06.454 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+18:53:07.382 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:53:07.412 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:3
+Given url  apiurl
+js failed:
+>>>>
+01: apiurl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "apiurl" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/HomePage.feature:3
+18:54:38.963 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:54:40.340 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:54:40.346 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+18:54:40.404 [main] INFO  com.intuit.karate - [print] Valor de apiUrl: https://conduit-api.bondaracademy.com/api/ 
+18:54:40.741 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+18:54:41.509 [main] DEBUG com.intuit.karate - response time in milliseconds: 765
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-X5BCbzvgwNoWr82uK5Kn0IY5IWo"
+1 < x-cloud-trace-context: 013302d9997a16d2be3b142961fe027f;o=1
+1 < date: Fri, 02 May 2025 23:54:41 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjIzMDA4MSwiZXhwIjoxNzUxNDE0MDgxfQ.i0M9YaAkpo0woyOQUgYhl-vSHgp-3ER9JSQ2Q_r3AUU"}}
+
+18:54:41.517 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+18:54:42.287 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:54:42.305 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:3
+Given url  apiurl
+js failed:
+>>>>
+01: apiurl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "apiurl" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/HomePage.feature:3
+18:54:42.872 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:54:42.877 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746230082873
+18:54:42.880 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+18:54:42.907 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+18:54:42.908 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:54:42.909 [pool-2-thread-2] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+18:54:42.922 [pool-2-thread-2] INFO  com.intuit.karate - [print] Valor de apiUrl: https://conduit-api.bondaracademy.com/api/ 
+18:54:42.926 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+18:54:43.620 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 693
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-x0Fxupsk/2OfFNd4iRicIt4G7FY"
+1 < x-cloud-trace-context: 515bbc4a997a761c6a538660bd059311
+1 < date: Fri, 02 May 2025 23:54:43 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjIzMDA4MywiZXhwIjoxNzUxNDE0MDgzfQ.CSn8QVBc91MV-pA6srmFDtSnnP_-Hsqz7Ttsu0qFPIA"}}
+
+18:54:43.623 [pool-2-thread-2] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+18:54:43.624 [pool-2-thread-1] WARN  com.intuit.karate - this thread waited 715 milliseconds for callSingle lock: classpath:Helpers/CreateToken.feature
+18:54:43.629 [pool-2-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:3
+Given url  apiurl
+js failed:
+>>>>
+01: apiurl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "apiurl" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/HomePage.feature:3
+18:54:43.775 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+18:54:43.922 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+18:55:10.614 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:55:11.945 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:55:11.952 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+18:55:12.009 [main] INFO  com.intuit.karate - [print] Valor de apiUrl: https://conduit-api.bondaracademy.com/api/ 
+18:55:12.373 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+18:55:13.622 [main] DEBUG com.intuit.karate - response time in milliseconds: 1247
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-gyPYvCps4xzfLboLcE60mOUd7jI"
+1 < x-cloud-trace-context: 8f7ce8d63d2d8cc1cb85da2a6af59afc;o=1
+1 < date: Fri, 02 May 2025 23:55:13 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjIzMDExMywiZXhwIjoxNzUxNDE0MTEzfQ.rd6S5KOl3eDhnYr_2F7yUFmFVSn9sSFW7GotkmrCnBY"}}
+
+18:55:13.628 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+18:55:14.300 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:55:14.317 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:3
+Given url  apiurl
+js failed:
+>>>>
+01: apiurl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "apiurl" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/HomePage.feature:3
+18:55:14.890 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:55:15.062 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746230114891
+18:55:15.064 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+18:55:15.085 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:55:15.085 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+18:55:15.086 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+18:55:15.092 [pool-2-thread-1] INFO  com.intuit.karate - [print] Valor de apiUrl: https://conduit-api.bondaracademy.com/api/ 
+18:55:15.095 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+18:55:16.169 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1074
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-dy5d3DW0cufgkMWFQEOcCEua3IE"
+1 < x-cloud-trace-context: 0ac450c9860254382d592406e9698bb3
+1 < date: Fri, 02 May 2025 23:55:16 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjIzMDExNiwiZXhwIjoxNzUxNDE0MTE2fQ.d6FSfAC6vDeRmAw3rpNqMcRQaAqvrUKtMJzTV5Hy0VI"}}
+
+18:55:16.171 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+18:55:16.171 [pool-2-thread-2] WARN  com.intuit.karate - this thread waited 1085 milliseconds for callSingle lock: classpath:Helpers/CreateToken.feature
+18:55:16.175 [pool-2-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:3
+Given url  apiurl
+js failed:
+>>>>
+01: apiurl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "apiurl" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/HomePage.feature:3
+18:55:16.343 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+18:55:16.392 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+18:56:14.585 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:56:15.771 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:56:15.776 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+18:56:15.827 [main] INFO  com.intuit.karate - [print] Valor de apiUrl: https://conduit-api.bondaracademy.com/api/ 
+18:56:16.122 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+18:56:16.986 [main] DEBUG com.intuit.karate - response time in milliseconds: 861
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-JnDnsxQD/4D8wQ5/F1nRrY1ZhG0"
+1 < x-cloud-trace-context: 196be0cca4e87da10e4fc0194894fdfd;o=1
+1 < date: Fri, 02 May 2025 23:56:17 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjIzMDE3NywiZXhwIjoxNzUxNDE0MTc3fQ.g34Vthi1Fq387ZFWAUg113SAfW17MiI9WTvzHmIpRy0"}}
+
+18:56:16.993 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+18:56:17.653 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:56:17.659 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Authorization: Tokenundefined
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:56:18.149 [main] DEBUG com.intuit.karate - response time in milliseconds: 490
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 629ea2dc5e9dfd52ae005f18eb905309
+1 < date: Fri, 02 May 2025 23:56:18 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+18:56:18.596 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:56:18.600 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1746230178597
+18:56:18.603 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+18:56:18.626 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:56:18.626 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+18:56:18.627 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+18:56:18.635 [pool-2-thread-1] INFO  com.intuit.karate - [print] Valor de apiUrl: https://conduit-api.bondaracademy.com/api/ 
+18:56:18.638 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+18:56:19.210 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 571
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-XadELyunhpyKof9Ynq+n3qa1JL0"
+1 < x-cloud-trace-context: 0be40bbe36070a5429dfb612a7cd947f
+1 < date: Fri, 02 May 2025 23:56:19 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjIzMDE3OSwiZXhwIjoxNzUxNDE0MTc5fQ.LCCg2K_0KtfKTgswRAkVfdRVEC64VLFEZC1sKoDW0LY"}}
+
+18:56:19.213 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+18:56:19.213 [pool-2-thread-2] WARN  com.intuit.karate - this thread waited 586 milliseconds for callSingle lock: classpath:Helpers/CreateToken.feature
+18:56:19.217 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Authorization: Tokenundefined
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:56:19.401 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/Articles.feature
+18:56:19.713 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 495
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: a1ffd8cc7bf06e6d8379a4b1311a874b
+1 < date: Fri, 02 May 2025 23:56:19 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
+18:56:19.762 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+18:58:31.673 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:58:33.041 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:58:33.047 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:Helpers/CreateToken.feature
+18:58:33.094 [main] INFO  com.intuit.karate - [print] Valor de apiUrl: https://conduit-api.bondaracademy.com/api/ 
+18:58:33.436 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"zony123rbd@gmail.com","password":"123456789"}}
+
+18:58:34.229 [main] DEBUG com.intuit.karate - response time in milliseconds: 791
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"140-f6nqdfiMNnEetPRZ0kq/z9w/eO8"
+1 < x-cloud-trace-context: adc44e7c2749dd0bd8476618d7ba4a9e;o=1
+1 < date: Fri, 02 May 2025 23:58:34 GMT
+1 < server: Google Frontend
+1 < Content-Length: 320
+{"user":{"email":"zony123rbd@gmail.com","username":"sandrovillegas","bio":"asd","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyNTIxM30sImlhdCI6MTc0NjIzMDMxNCwiZXhwIjoxNzUxNDE0MzE0fQ.ldCTSJtQn6UK2r4KxkzLftHrbEc92cwo-bkHwBwvKrI"}}
+
+18:58:34.237 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:Helpers/CreateToken.feature
+18:58:35.014 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:58:35.021 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Authorization: Tokenundefined
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:58:35.526 [main] DEBUG com.intuit.karate - response time in milliseconds: 504
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"7a-Qzm8LbZcI9CSF1vyTLcdJG/ujGw"
+1 < x-cloud-trace-context: 5133dd814508b5faf5686bb52546d239
+1 < date: Fri, 02 May 2025 23:58:35 GMT
+1 < server: Google Frontend
+1 < Content-Length: 122
+{"tags":["Test","Bondar Academy","YouTube","qa career","QA Skills","Value-Focused","Git","GitHub","Zoom","Live Sessions"]}
+
