@@ -13,7 +13,8 @@ function fn() {
   } else if (env == 'qa') {
    
   }
-  var accessToken =  karate.callSingle('classpath:Helpers/CreateToken.feature', config).authToken
-  karate.configure('headers',{Authorization:'Token'+accessToken })
+  // se Agrega en el encabezado  el token de autenticacion aunque no
+  var accessToken =  karate.callSingle('classpath:helpers/CreateToken.feature', config).authToken
+  karate.configure('headers',{Authorization:'Token '+accessToken })
   return config;
 }

@@ -1,26 +1,31 @@
-@debug
+
 Feature: Articles
     Background: Define URL
         Given url apiUrl
-    #Scenario: Create a new articles
-    #Given path 'users/login'
-    #And request
-    #   """
-    #  {
-    #     "user": {
-    #        "email": "zony123rbd@gmail.com",
-    #         "password": "123456789"
-    #    }
-    # }
-    # """
-    #When method post
-    #Then status 200
-    #* def token =  response.user.token
-    # * def tokenResponse = callonce read('classpath:Helpers/createToken.feature')
     #* def token = tokenResponse.authToken
-    Scenario: create new articulo
-        #Given header Authorization = 'Token' + token
-        Given path 'articles'
+    #* print 'Valor de apiUrl:', apiUrl
+
+    Scenario:create new articulo
+        #print 'Valor de apiUrl:', Token
+        #Given header Authorization = 'Token '+token
+        And path 'articles'
+        And request
+            """
+            {
+                "article": {
+                    "tagList": [],
+                    "title": "asdsas2SSSssdSSSWEs wssss",
+                    "description": "das223",
+                    "body": "dsa2da424s2"
+                }
+            }
+            """
+        When method post
+        Then status 201
+
+
+
+
 # And request {
 #"article": {
 # "tagList": [],

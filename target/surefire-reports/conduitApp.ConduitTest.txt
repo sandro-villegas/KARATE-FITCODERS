@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: conduitApp.ConduitTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.388 s - in conduitApp.ConduitTest
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.921 s <<< FAILURE! - in conduitApp.ConduitTest
+conduitApp.ConduitTest.testParallel  Time elapsed: 5.5 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'boolean org.apache.commons.lang3.ObjectUtils.isNotEmpty(java.lang.Object)'
+	at net.masterthought.cucumber.ReportParser.parseClassificationsFiles(ReportParser.java:129)
+	at net.masterthought.cucumber.ReportBuilder.generateReports(ReportBuilder.java:94)
+	at conduitApp.ConduitTest.generateReport(ConduitTest.java:41)
+	at conduitApp.ConduitTest.testParallel(ConduitTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

@@ -1,7 +1,7 @@
 Feature: Test for the home page
     Background:define Url
         Given url  apiUrl
-    @debug
+
     Scenario: Get all tags
         Given path 'tags'
         When method Get
